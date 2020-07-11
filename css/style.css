@@ -603,7 +603,7 @@ body:after {
 
 .section-title {
   position: relative;
-  padding-bottom: 20px; }
+  padding-bottom: 5px; }
   .section-title:after {
     content: "";
     position: absolute;
@@ -619,6 +619,8 @@ body:after {
     transform: translateX(-50%); }
   .section-title.text-center:after {
     background: #fff; }
+  .section-title.text-center.heading::after{
+    background: #207561;  }
 
 .position-relative {
   position: relative; }

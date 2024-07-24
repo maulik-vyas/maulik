@@ -189,6 +189,12 @@ body:after {
     position: relative;
     z-index: 1; }
 
+.img-fluid img {
+  object-fit: contain;
+/* or
+  object-fit: cover; */
+} 
+
 @media (max-width: 991.98px) {
   .img-md-fluid {
     max-width: 100%; } }

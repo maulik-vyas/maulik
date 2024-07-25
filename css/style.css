@@ -190,10 +190,11 @@ body:after {
     z-index: 1; }
 
 .img-fluid img {
-  object-fit: contain;
-/* or
-  object-fit: cover; */
-} 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 @media (max-width: 991.98px) {
   .img-md-fluid {

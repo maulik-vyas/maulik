@@ -189,6 +189,13 @@ body:after {
     position: relative;
     z-index: 1; }
 
+.img-fluid img {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: 50%;
+}
+
 @media (max-width: 991.98px) {
   .img-md-fluid {
     max-width: 100%; } }

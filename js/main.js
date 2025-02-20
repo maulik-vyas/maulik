@@ -12,7 +12,23 @@ jQuery(document).ready(function($) {
 	// $(".loader").delay(1000).fadeOut("slow");
  //  $("#overlayer").delay(1000).fadeOut("slow");	
   
+ 	const jobRoles = [
+    	"I'm a Data Analyst",
+    	"I'm a BI Analyst",
+    	"I'm a Data Scientist"
+	];
 
+	let currentRoleIndex = 0;
+	const jobRoleElement = document.getElementById("job-role");
+
+	function changeJobRole() {
+    	jobRoleElement.textContent = jobRoles[currentRoleIndex];
+    	currentRoleIndex = (currentRoleIndex + 1) % jobRoles.length;
+	}
+
+	// Change job role every 3 seconds
+	setInterval(changeJobRole, 3000);
+	
 	var siteMenuClone = function() {
 
 		$('.js-clone-nav').each(function() {

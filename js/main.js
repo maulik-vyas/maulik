@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 	}
 
 	// Change job role every 3 seconds
-	setInterval(changeJobRole, 3000);
+	setInterval(changeJobRole, 1000);
 	
 	var siteMenuClone = function() {
 

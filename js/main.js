@@ -10,21 +10,58 @@ jQuery(document).ready(function($) {
 
 	
 	// $(".loader").delay(1000).fadeOut("slow");
- //  $("#overlayer").delay(1000).fadeOut("slow");	
+	//  $("#overlayer").delay(1000).fadeOut("slow");	
   
- 	const jobRoles = [
-    	"I'm a Data Analyst",
-    	"I'm a BI Analyst",
-    	"I'm a Data Scientist"
+ 	// Variables for customization
+	const typeSpeed = 100;  // Speed of typing in milliseconds per character
+	const backSpeed = 50;   // Speed of deleting in milliseconds per character
+	const backDelay = 1500; // Delay before starting to delete after text is typed
+	const jobRoles = [
+		"I'm a Data Analyst ",
+		"I'm a BI Analyst ",
+		"I'm a Data Scientist "
 	];
 
+	// Setting up the index for the job roles
 	let currentRoleIndex = 0;
 	const jobRoleElement = document.getElementById("job-role");
 
-	function changeJobRole() {
-    	jobRoleElement.textContent = jobRoles[currentRoleIndex];
-    	currentRoleIndex = (currentRoleIndex + 1) % jobRoles.length;
+	let isDeleting = false; // To track whether the text is being deleted
+	let text = '';          // Current text being typed/deleted
+	let roleIndex = 0;      // Index to track current character in the current job role
+
+	// Function to type and delete job role text dynamically
+	function typeEffect() {
+		if (isDeleting) {
+			text = jobRoles[currentRoleIndex].substring(0, roleIndex--); // Delete character
+			jobRoleElement.textContent = text;
+		} else {
+			text = jobRoles[currentRoleIndex].substring(0, roleIndex++); // Type character
+			jobRoleElement.textContent = text;
+		}
+
+		// When the full job role is typed, start the deleting process
+		if (roleIndex === jobRoles[currentRoleIndex].length) {
+			isDeleting = true;
+			setTimeout(typeEffect, backDelay); // Wait for backDelay before starting deletion
+			return;
+		}
+
+		// When all characters are deleted, move to the next role
+		if (isDeleting && roleIndex === 0) {
+			isDeleting = false;
+			currentRoleIndex = (currentRoleIndex + 1) % jobRoles.length; // Cycle to next job role
+		}
+
+		// Control the typing and deleting speed
+		const speed = isDeleting ? backSpeed : typeSpeed;
+		setTimeout(typeEffect, speed);
 	}
+
+	// Start the typing effect
+	typeEffect();
+
+ 	
 
 	// Change job role every 3 seconds
 	setInterval(changeJobRole, 1000);

@@ -696,6 +696,8 @@ p {
   height: 50px;
   object-fit: cover;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 .certificate-info h3 {
@@ -987,6 +989,11 @@ body:after {
   z-index: 1;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .img-fluid img {
   display: block;
   margin-left: 0;
@@ -1146,7 +1153,8 @@ body:after {
 
 /* Style the hamburger icon when clicked */
 .site-menu-toggle.active .icon-menu {
-  transform: rotate(90deg); /* Optional: make the icon rotate when clicked */
+  transform: rotate(90deg);
+  /* Optional: make the icon rotate when clicked */
 }
 
 .site-navbar .site-navigation .site-menu {
@@ -1602,6 +1610,13 @@ body:after {
   height: 100vh;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
 .site-blocks-cover .text-intro {
   position: relative;
   z-index: 2;
@@ -1661,10 +1676,11 @@ body:after {
 }
 
 .service {
-  padding: 30px;
+  padding: 20px;
+  border-radius: 10px;
   background: #fff;
   -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
@@ -2021,3 +2037,108 @@ body:after {
 .col-lg-3 {
   background-size: contain;
 }
+
+.col-md-6 {
+  flex: 1 1 calc(50% - 20px); /* Two equal columns */
+  max-width: calc(50% - 20px);
+  display: flex;
+}
+
+
+.col-md-3 {
+  flex: 1 1 calc(33.33% - 20px); /* Ensures 3 containers in a row */
+  max-width: calc(33.33% - 20px); /* Responsive width */
+  display: flex;
+}
+
+.col-md-4 {
+    flex: 1 1 calc(25% - 20px); /* 4 columns in a row */
+    max-width: calc(25% - 20px);
+    display: flex;
+}
+
+ 
+#experience .service-about {
+  text-align: center;
+}
+
+#experience h3, 
+#experience h6 {
+  text-align: center; /* Ensures all headings and text align centrally */
+}
+
+
+#education .service-about {
+  text-align: center;
+}
+
+#education h3, 
+#education h6 {
+  text-align: center; /* Ensures all headings and text align centrally */
+}
+
+
+/* front-page icon */
+
+/* Individual icon item */
+.front-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  /* margin-left: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+/* Ensure icons have no background */
+.front-icon img {
+  width: 100%; /* Set the size of icons */
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; 
+}
+
+
+/* Hover effect for icons */
+.front-icon:hover {
+  transform: scale(1.1) translateY(-5px) rotate(360deg);
+  /* Slight scale effect for hover */
+  opacity: 0.8;
+}
+
+/* Hover effect for icons */
+.front-icon:hover img,
+.front-icon:hover .iconify {
+  transform: scale(1.1);
+  /* Slight scale effect on hover */
+  opacity: 0.8;
+}
+
+
+/* Adjust alignment to match the "Projects" button */
+.row-introduction p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.row-introduction .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Align icons and button in the same row */
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between elements */
+}
+

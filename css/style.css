@@ -1503,34 +1503,6 @@ body:after {
   color: #00bcd4;
 }
 
-    /* Ensures consistent width between cards */
-    .col-md-4 {
-      flex: 1 1 25%;
-      /* Ensures equal width distribution */
-      max-width: 25%;
-      /* Prevents uneven layouts */
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 992px) {
-    
-      /* Tablets */
-      .col-md-4 {
-        flex: 1 1 50%;
-        /* Make each card take full width */
-        max-width: 50%;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      /* Mobile Devices */
-        .col-md-4 {
-          flex: 1 1 100%;
-          /* Each card takes full width */
-          max-width: 100%;
-      }
-    }
-    
 
 
 
@@ -1767,7 +1739,7 @@ body:after {
     .certificate-image-wrapper {
       position: relative;
       max-width: 100%;
-      height: 200px;
+      height: 300px;
       /* Fixed height for consistency */
       overflow: hidden;
       border-radius: 10px;
@@ -1783,10 +1755,12 @@ body:after {
       height: auto;
       border-radius: 10px;
       object-fit: cover;
-      transition: transform 0.3s ease;
+      padding-bottom: 10px;
+      transition: transform 0.7s ease;
     }
 
     .certificate-info {
+      bottom: 10px;
       padding: 10px 0;
       text-align: center;
       max-width: 100%;
@@ -1880,20 +1854,28 @@ body:after {
 
     /* Link to GitHub */
     .project-link {
-      position: absolute;
+      position: block;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: 1;
       display: block;
+      text-decoration: none;
+      color: inherit;
     }
+
+    .project-link:hover {
+      /* Optional: Add a hover effect */
+      opacity: 0.9;  /* Example: Make the card slightly transparent when hovered */
+    }
+    
 
     /* Ensures consistent width between cards */
 .col-md-4 {
-  flex: 1 1 25%;
+  flex: 1 1 50%;
   /* Ensures equal width distribution */
-  max-width: 25%;
+  max-width: 50%;
   /* Prevents uneven layouts */
 }
 

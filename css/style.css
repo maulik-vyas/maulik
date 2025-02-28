@@ -1320,7 +1320,8 @@ body:after {
 .buttons-container {
   display: flex;
   align-items: center;
-  gap: 15px; /* Space between elements */
+  gap: 15px;
+  /* Space between elements */
 }
 
 /* Button animation */
@@ -1355,10 +1356,11 @@ body:after {
 
 /* Ensure icons have no background */
 .front-icon img {
-  width: 100%; /* Set the size of icons */
+  width: 100%;
+  /* Set the size of icons */
   height: 100%;
   object-fit: cover;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 /* Hover effect for icons */
@@ -1511,146 +1513,148 @@ body:after {
 
 
 
-    /* ----------------------------- Experience Section ----------------------------- */
-    .img-fluid img {
-      display: block;
-      margin-left: 0;
-      margin-right: auto;
-      width: 50%;
-    }
+/* ----------------------------- Experience Section ----------------------------- */
+.img-fluid img {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: 50%;
+}
 
-    .img-fluid:hover {
-      transform: scale(1.1) translateY(-5px) rotate(360deg);
-      transition: transform 0.7s ease-in-out;
-    }
+.img-fluid:hover {
+  transform: scale(1.1) translateY(-5px) rotate(360deg);
+  transition: transform 0.7s ease-in-out;
+}
 
-    @media (max-width: 991.98px) {
-      .img-md-fluid {
-        max-width: 100%;
-      }
-    }
+@media (max-width: 991.98px) {
+  .img-md-fluid {
+    max-width: 100%;
+  }
+}
 
-    @media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
 
-      .display-1,
-      .display-3 {
-        font-size: 3rem;
-      }
-    }
+  .display-1,
+  .display-3 {
+    font-size: 3rem;
+  }
+}
 
-    .description {
-      margin-top: 10px;
-      font-size: 1rem;
-      color: #ccc;
-      font-style: italic;
-    }
+.description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ccc;
+  font-style: italic;
+}
 
-    /* Responsive design adjustments */
-    @media (max-width: 768px) {
-      .section-title {
-        font-size: 2rem;
-      }
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
 
-      .description {
-        font-size: 0.9rem;
-      }
+  .description {
+    font-size: 0.9rem;
+  }
 
-      .service-number img {
-        width: 40px;
-        height: 40px;
-      }
-    }
+  .service-number img {
+    width: 40px;
+    height: 40px;
+  }
+}
 
-    .service-about {
-      padding: 15px;
-    }
+.service-about {
+  padding: 15px;
+}
 
-    .service-about h3,
-    .service-about h6 {
-      color: white;
-      /* margin: 5px 0; */
-      /* margin-bottom: 10px; */
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-    }
+.service-about h3,
+.service-about h6 {
+  color: white;
+  /* margin: 5px 0; */
+  /* margin-bottom: 10px; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
 
-    .service-about p {
-      color: white;
-      margin: 5px 0;
-      font-size: 1rem;
-      text-align: center;
-    }
+.service-about p {
+  color: white;
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: center;
+}
 
-    .service .service-about *:last-child {
-      margin-bottom: 0;
-    }
+.service .service-about *:last-child {
+  margin-bottom: 0;
+}
 
-    .service .service-about h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
+.service .service-about h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
 
-    .service-number {
-      margin-bottom: 15px;
-      /* Adds spacing below the image */
-    }
+.service-number {
+  margin-bottom: 15px;
+  /* Adds spacing below the image */
+}
 
 
-    .service-number img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto;
-    }
+.service-number img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
 
-    /* Responsive design adjustments */
-    @media (max-width: 768px) {
-      .section-title {
-        font-size: 2rem;
-      }
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
 
-      .description {
-        font-size: 0.9rem;
-      }
+  .description {
+    font-size: 0.9rem;
+  }
 
-      .service-number img {
-        width: 40px;
-        height: 40px;
-      }
-    }
+  .service-number img {
+    width: 40px;
+    height: 40px;
+  }
+}
 
-    .service .service-number {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 60px;
-      flex: 0 0 60px;
-    }
+.service .service-number {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 60px;
+  flex: 0 0 60px;
+}
 
-    .service .service-number span {
-      position: relative;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      border-radius: 50%;
-      background: #207561;
-      display: inline-block;
-      color: #fff;
-      text-align: center;
-    }
+.service .service-number span {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #207561;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+}
 
-        /* Ensures consistent width between cards */
+/* Ensures consistent width between cards */
 /* Default: Laptop/Desktop (3 items per row) */
 .col-md-3 {
-  flex: 1 1 33.33%; /* Each card takes 33.33% width (3 per row) */
+  flex: 1 1 33.33%;
+  /* Each card takes 33.33% width (3 per row) */
   max-width: 33.33%;
 }
 
 /* Tablets & Mobile: 1 item per row */
 @media (max-width: 992px) {
   .col-md-3 {
-    flex: 1 1 100%; /* Each card takes 100% width (1 per row) */
+    flex: 1 1 100%;
+    /* Each card takes 100% width (1 per row) */
     max-width: 100%;
   }
 }
@@ -1663,7 +1667,7 @@ body:after {
 
 
 /* ----------------------------- Education Section ----------------------------- */
- 
+
 
 /* Ensures consistent width between cards */
 .col-md-6 {
@@ -1685,11 +1689,12 @@ body:after {
 }
 
 @media (max-width: 768px) {
+
   /* Mobile Devices */
-    .col-md-6 {
-      flex: 1 1 100%;
-      /* Each card takes full width */
-      max-width: 100%;
+  .col-md-6 {
+    flex: 1 1 100%;
+    /* Each card takes full width */
+    max-width: 100%;
   }
 }
 
@@ -1700,178 +1705,202 @@ body:after {
 
 
 
-    /* ----------------------------- Certificate Section ----------------------------- */
-    .fadeInUp {
-      animation-name: fadeInUp;
-    }
+/* ----------------------------- Certificate Section ----------------------------- */
+.fadeInUp {
+  animation-name: fadeInUp;
+}
 
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    /* Styling for certificate card */
-    .service-about-certificate {
-      position: relative;
-      padding: 20px;
-      border-radius: 10px;
-      background-color: #f8f9fa;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      /* height: auto; */
-      box-sizing: border-box;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+/* Styling for certificate card */
+.service-about-certificate {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* height: auto; */
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .certificate-image-wrapper {
-      position: relative;
-      max-width: 100%;
-      height: 300px;
-      /* Fixed height for consistency */
-      overflow: hidden;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+.certificate-image-wrapper {
+  position: relative;
+  max-width: 100%;
+  height: 300px;
+  /* Fixed height for consistency */
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-    .certificate-image {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      object-fit: cover;
-      padding-bottom: 10px;
-      transition: transform 0.7s ease;
-    }
+.certificate-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  padding-bottom: 10px;
+  transition: transform 0.7s ease;
+}
 
-    .certificate-info {
-      bottom: 10px;
-      padding: 10px 0;
-      text-align: center;
-      max-width: 100%;
-    }
+.certificate-info {
+  bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+  max-width: 100%;
+}
 
-    .certificate-info h3 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+.certificate-info h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #343a40;
+}
 
-    .certificate-info p {
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
+.certificate-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
 
-    .service-about-certificate a {
-      text-decoration: none;
-      color: inherit;
-    }
+.service-about-certificate a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    .service-about-certificate p {
-      margin-top: 10px;
-      font-size: 1rem;
-      color: #000;
-    }
+.service-about-certificate p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #000;
+}
 
-    .service-about-certificate h3 {
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
+.service-about-certificate h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
-    /* Hover effect for certificate card */
-    .service-about-certificate:hover .certificate-image {
-      transform: scale(1.05);
-    }
+/* Hover effect for certificate card */
+.service-about-certificate:hover .certificate-image {
+  transform: scale(1.05);
+}
 
-    .service-about-certificate:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    }
+.service-about-certificate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
 
-    /* Show tooltip on hover */
-    .service-about-certificate:hover .tooltip {
-      display: block;
-      opacity: 1;
-    }
+/* Show tooltip on hover */
+.service-about-certificate:hover .tooltip {
+  display: block;
+  opacity: 1;
+}
 
-    /* Hover effect for certificate card */
-    .service-about-certificate:hover .certificate-image {
-      transform: scale(1.05);
-    }
+/* Hover effect for certificate card */
+.service-about-certificate:hover .certificate-image {
+  transform: scale(1.05);
+}
 
-    .service-about-certificate:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    }
+.service-about-certificate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
 
-    /* Tooltip hover effect */
-    .tooltip {
-      display: none;
-      position: absolute;
-      bottom: 0%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-      width: 100%;
-      font-size: 0.9rem;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      z-index: 10;
-    }
+/* Tooltip hover effect */
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  
+  z-index: 10;
+}
 
-    /* Responsive design adjustments */
-    @media (max-width: 768px) {
-      .section-title {
-        font-size: 2rem;
-      }
 
-      .about-text {
-        font-size: 1rem;
-      }
+.tooltip.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
 
-      .tooltip {
-        width: 90%;
-      }
-    }
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
 
-    /* Link to GitHub */
-    .project-link {
-      position: block;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      display: block;
-      text-decoration: none;
-      color: inherit;
-    }
 
-    .project-link:hover {
-      /* Optional: Add a hover effect */
-      opacity: 0.9;  /* Example: Make the card slightly transparent when hovered */
-    }
-    
 
-    /* Ensures consistent width between cards */
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .tooltip {
+    width: 90%;
+  }
+}
+
+/* Link to GitHub */
+.project-link {
+  position: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link:hover {
+  /* Optional: Add a hover effect */
+  opacity: 0.9;
+  /* Example: Make the card slightly transparent when hovered */
+}
+
+
+/* Ensures consistent width between cards */
 .col-md-4 {
   flex: 1 1 50%;
   /* Ensures equal width distribution */
@@ -1891,11 +1920,12 @@ body:after {
 }
 
 @media (max-width: 768px) {
+
   /* Mobile Devices */
-    .col-md-4 {
-      flex: 1 1 100%;
-      /* Each card takes full width */
-      max-width: 100%;
+  .col-md-4 {
+    flex: 1 1 100%;
+    /* Each card takes full width */
+    max-width: 100%;
   }
 }
 
@@ -1904,264 +1934,264 @@ body:after {
 
 
 
-    /* ----------------------------- Skills Section ----------------------------- */
-    .animated {
-      opacity: 0;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-    }
+/* ----------------------------- Skills Section ----------------------------- */
+.animated {
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
 
-    .fadeIn {
-      animation-name: fadeIn;
-    }
+.fadeIn {
+  animation-name: fadeIn;
+}
 
-    /* Animations */
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 
-      100% {
-        opacity: 1;
-      }
-    }
+  100% {
+    opacity: 1;
+  }
+}
 
-    .tech-icon-wrapper {
-      width: 100px;
-      height: 100px;
-      background: radial-gradient(circle, #c1bbbb, #727f8c);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 15px;
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease-in-out;
-      animation: floatEffect 3s infinite ease-in-out;
-      overflow: hidden;
-      position: relative;
-    }
+.tech-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #c1bbbb, #727f8c);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  animation: floatEffect 3s infinite ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
 
-    .tech-icon-wrapper:hover {
-      transform: scale(1.1);
-    }
+.tech-icon-wrapper:hover {
+  transform: scale(1.1);
+}
 
-    .tech-icon {
-      width: 60%;
-      height: auto;
-      transition: transform 0.3s ease-in-out;
-    }
-
-
-    .tech-icon-wrapper:hover .tech-icon {
-      transform: scale(1.2) translateY(-5px) rotate(360deg);
-      /* Moves icon slightly upwards */
-      transition: transform 0.7s ease-in-out;
-    }
+.tech-icon {
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
 
 
-    @keyframes floatEffect {
-      0% {
-        transform: translateY(0px);
-      }
-
-      50% {
-        transform: translateY(-8px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-    }
+.tech-icon-wrapper:hover .tech-icon {
+  transform: scale(1.2) translateY(-5px) rotate(360deg);
+  /* Moves icon slightly upwards */
+  transition: transform 0.7s ease-in-out;
+}
 
 
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 
 
-    /* ----------------------------- Footer Section ----------------------------- */
-    /* Container for the icons */
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      gap: 10px;
-      /* No gap between the icons */
-      flex-wrap: wrap;
-      margin-top: 20px;
-      padding: 10px;
-    }
 
 
-    /* Individual icon item */
-    .social-icon {
-      display: inline-block;
-      width: 48px;
-      /* Width to match the image size */
-      height: 48px;
-      /* Height to match the image size */
-      margin: 20px;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      position: relative;
-      border-radius: 50%;
-      /*Make icons round if needed */
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
+/* ----------------------------- Footer Section ----------------------------- */
+/* Container for the icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  /* No gap between the icons */
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 10px;
+}
 
 
-    /* Hover effect for icons */
-    .social-icon:hover {
-      transform: scale(1.1);
-      /* Slight scale effect for hover */
-      opacity: 0.8;
-    }
-
-    /* Hover effect for icons */
-    .social-icon:hover img,
-    .social-icon:hover .iconify {
-      transform: scale(1.1);
-      /* Slight scale effect on hover */
-      opacity: 0.8;
-    }
-
-    /* Adding animations for each icon's entrance */
-    .dim-item {
-      animation: fadeInUp 1s ease-in-out;
-    }
-
-    .dim-item:nth-child(1) {
-      animation-delay: 0.2s;
-    }
-
-    .dim-item:nth-child(2) {
-      animation-delay: 0.3s;
-    }
-
-    .dim-item:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-
-    .dim-item:nth-child(4) {
-      animation-delay: 0.5s;
-    }
-
-    .dim-item:nth-child(5) {
-      animation-delay: 0.6s;
-    }
-
-    .dim-item:nth-child(6) {
-      animation-delay: 0.7s;
-    }
-
-    /* Animation for the icons fading in from the bottom */
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Stylish hover effect on icons */
-    .icon-link {
-      transition: transform 0.3s ease, filter 0.3s ease;
-      /* filter: grayscale(100%); */
-    }
-
-    /* Hover effect on icon */
-    .icon-link:hover {
-      transform: rotate(15deg) scale(1.1);
-      filter: grayscale(0);
-    }
+/* Individual icon item */
+.social-icon {
+  display: inline-block;
+  width: 48px;
+  /* Width to match the image size */
+  height: 48px;
+  /* Height to match the image size */
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  /*Make icons round if needed */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
 
-    /* Footer title styling */
-    .footer-title {
-      font-size: 36px;
-      font-weight: 600;
-      color: #333;
-      letter-spacing: 2px;
-      margin-bottom: 30px;
-      position: relative;
-      text-align: center;
-    }
+/* Hover effect for icons */
+.social-icon:hover {
+  transform: scale(1.1);
+  /* Slight scale effect for hover */
+  opacity: 0.8;
+}
 
-    .footer-title:after {
-      content: "";
-      position: absolute;
-      align-items: center;
-      bottom: -10px;
-      left: 50%;
-      height: 2px;
-      background: #207561;
-      width: 50px;
-      transform: translateX(-50%);
-      /* Center the line */
-    }
+/* Hover effect for icons */
+.social-icon:hover img,
+.social-icon:hover .iconify {
+  transform: scale(1.1);
+  /* Slight scale effect on hover */
+  opacity: 0.8;
+}
 
-    .footer-title:hover {
-      color: #3498db;
-    }
+/* Adding animations for each icon's entrance */
+.dim-item {
+  animation: fadeInUp 1s ease-in-out;
+}
 
-    /* Footer text styling */
-    p {
-      font-size: 14px;
-      color: #888;
-      margin-top: 20px;
-      letter-spacing: 1px;
-    }
+.dim-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
 
-    /* Optional: Add some space between social icons */
-    .social-icons a {
-      margin: 0;
-      /* No additional margin between icons */
-      text-decoration: none;
-      /* Remove link decoration */
-    }
+.dim-item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dim-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.dim-item:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.dim-item:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.dim-item:nth-child(6) {
+  animation-delay: 0.7s;
+}
+
+/* Animation for the icons fading in from the bottom */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stylish hover effect on icons */
+.icon-link {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* filter: grayscale(100%); */
+}
+
+/* Hover effect on icon */
+.icon-link:hover {
+  transform: rotate(15deg) scale(1.1);
+  filter: grayscale(0);
+}
 
 
-    /* Making sure the icons are tightly grouped */
-    .social-icons img,
-    .social-icons .iconify {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
+/* Footer title styling */
+.footer-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
 
-    /* Making sure the icons are tightly grouped */
-    .social-icons img,
-    .social-icons .iconify {
-      transition: transform 0.3s ease;
-    }
+.footer-title:after {
+  content: "";
+  position: absolute;
+  align-items: center;
+  bottom: -10px;
+  left: 50%;
+  height: 2px;
+  background: #207561;
+  width: 50px;
+  transform: translateX(-50%);
+  /* Center the line */
+}
+
+.footer-title:hover {
+  color: #3498db;
+}
+
+/* Footer text styling */
+p {
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+/* Optional: Add some space between social icons */
+.social-icons a {
+  margin: 0;
+  /* No additional margin between icons */
+  text-decoration: none;
+  /* Remove link decoration */
+}
 
 
-    .social-icon img,
-    .social-icon .iconify {
-      width: 60%;
-      /* Make sure the icon fills the container */
-      height: 60%;
-      /* Ensure the icon fits within the circle */
-      object-fit: contain;
-      /* Ensure the icon maintains its aspect ratio */
-      transition: transform 0.3s ease, opacity 0.3s ease;
-      /* Animation for hover effects */
-    }
+/* Making sure the icons are tightly grouped */
+.social-icons img,
+.social-icons .iconify {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-    /* Hover effect for icons */
-    .social-icon:hover img,
-    .social-icon:hover .iconify {
-      transform: scale(1.1) translateY(-5px) rotate(360deg);
-      /* Slight scale effect on hover */
-      transition: transform 0.7s ease-in-out;
-      opacity: 0.8;
-    }
+/* Making sure the icons are tightly grouped */
+.social-icons img,
+.social-icons .iconify {
+  transition: transform 0.3s ease;
+}
+
+
+.social-icon img,
+.social-icon .iconify {
+  width: 60%;
+  /* Make sure the icon fills the container */
+  height: 60%;
+  /* Ensure the icon fits within the circle */
+  object-fit: contain;
+  /* Ensure the icon maintains its aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* Animation for hover effects */
+}
+
+/* Hover effect for icons */
+.social-icon:hover img,
+.social-icon:hover .iconify {
+  transform: scale(1.1) translateY(-5px) rotate(360deg);
+  /* Slight scale effect on hover */
+  transition: transform 0.7s ease-in-out;
+  opacity: 0.8;
+}

@@ -147,7 +147,6 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
-
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
 			e.preventDefault();
@@ -297,33 +296,81 @@ jQuery(document).ready(function($) {
   };
   siteScroll();
 
+//   var siteIstotope = function() {
+//   	/* activate jquery isotope */
+// 	  var $container = $('#posts').isotope({
+// 	    itemSelector : '.item',
+// 	    isFitWidth: true
+// 	  });
 
-  var siteIstotope = function() {
-  	/* activate jquery isotope */
-	  var $container = $('#posts').isotope({
-	    itemSelector : '.item',
-	    isFitWidth: true
-	  });
-
-	  $(window).resize(function(){
-	    $container.isotope({
-	      columnWidth: '.col-sm-3'
-	    });
-	  });
+// 	  $(window).resize(function(){
+// 	    $container.isotope({
+// 	      columnWidth: '.col-sm-3'
+// 	    });
+// 	  });
 	  
-	  $container.isotope({ filter: '*' });
+// 	  $container.isotope({ filter: '*' });
 
-	    // filter items on button click
-	  $('#filters').on( 'click', 'button', function(e) {
-	  	e.preventDefault();
-	    var filterValue = $(this).attr('data-filter');
-	    $container.isotope({ filter: filterValue });
-	    $('#filters button').removeClass('active');
-	    $(this).addClass('active');
-	  });
-  }
+// 	    // filter items on button click
+// 	  $('#filters').on( 'click', 'button', function(e) {
+// 	  	e.preventDefault();
+// 	    var filterValue = $(this).attr('data-filter');
+// 	    $container.isotope({ filter: filterValue });
+// 	    $('#filters button').removeClass('active');
+// 	    $(this).addClass('active');
+// 	  });
+//   }
 
-  siteIstotope();
+//   siteIstotope();
+
+//   var siteProjectIsotope = function() {
+//   /* Ensure project section exists before initializing */
+//   if ($('#project .row').length === 0) {
+//     console.warn('Project section (#project .row) not found. Isotope initialization skipped.');
+//     return;
+//   }
+
+//   /* Activate jQuery Isotope for project section */
+//   var $grid = $('#project .row').isotope({
+//     itemSelector: '.col-md-6',
+//     layoutMode: 'fitRows',
+//     percentPosition: true,
+//     filter: function() {
+//       var category = $(this).attr('data-category');
+//       return category === 'ds'; // Default filter: Data Science projects
+//     },
+//     transitionDuration: '0.8s'
+//   });
+
+//   /* Filter items on button click */
+//   $('#project .filters').on('click', '.btn', function(e) {
+//     e.preventDefault();
+//     var filterValue = $(this).attr('data-filter');
+//     if (filterValue) {
+//       $grid.isotope({
+//         filter: function() {
+//           var category = $(this).attr('data-category');
+//           return filterValue === '*' || category === filterValue;
+//         }
+//       });
+//       $('#project .filters .btn').removeClass('active');
+//       $(this).addClass('active');
+//     } else {
+//       console.warn('No data-filter attribute found on button:', this);
+//     }
+//   });
+
+//   /* Re-layout isotope on window resize and images loaded */
+//   $(window).resize(function() {
+//     $grid.isotope('layout');
+//   });
+
+//   /* Ensure layout after images load to prevent collapse */
+//   $grid.imagesLoaded().progress(function() {
+//     $grid.isotope('layout');
+//   });
+// };
+// siteProjectIsotope();
 
 
   $('.fancybox').on('click', function() {

@@ -320,6 +320,33 @@ $('#toggle-projects').on('click', function() {
     $projectGrid.isotope('layout');
   }
 });
+
+	// Toggle certificates visibility
+$("#toggle-certificates").on("click", function () {
+    var $certificateGrid = $(".certificate-grid");
+    var $button = $(this);
+
+    if ($certificateGrid.hasClass("show-all")) {
+      $certificateGrid.removeClass("show-all");
+      $button.text("View More");
+      // Scroll to top of certificate section when collapsing
+      $("html, body").animate(
+        {
+          scrollTop: $("#certificate").offset().top,
+        },
+        600,
+        "easeInOutExpo"
+      );
+    } else {
+      $certificateGrid.addClass("show-all");
+      $button.text("View Less");
+    }
+
+    // Re-layout Isotope if used
+    if ($certificateGrid.data("isotope")) {
+      $certificateGrid.isotope("layout");
+    }
+  });	
 	
 	
 //   var siteIstotope = function() {

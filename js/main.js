@@ -295,7 +295,33 @@ jQuery(document).ready(function($) {
 
   };
   siteScroll();
+  
 
+	
+	// Toggle projects visibility
+$('#toggle-projects').on('click', function() {
+  var $projectGrid = $('.project-grid');
+  var $button = $(this);
+  
+  if ($projectGrid.hasClass('show-all')) {
+    $projectGrid.removeClass('show-all');
+    $button.text('View More');
+    // Scroll to top of project section when collapsing
+    $('html, body').animate({
+      scrollTop: $('#project').offset().top
+    }, 600, 'easeInOutExpo');
+  } else {
+    $projectGrid.addClass('show-all');
+    $button.text('View Less');
+  }
+  
+  // Re-layout Isotope if used
+  if ($projectGrid.data('isotope')) {
+    $projectGrid.isotope('layout');
+  }
+});
+	
+	
 //   var siteIstotope = function() {
 //   	/* activate jquery isotope */
 // 	  var $container = $('#posts').isotope({

@@ -325,6 +325,58 @@
   background: #000;
 }
 
+/* Projects Section - CTA Buttons */
+.project__cta {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.project__cta a.btn {
+  font-size: 0.9rem;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #3f51b5;
+  color: #fff;
+  border-color: none;
+}
+
+.project__cta a.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #2c3e9c;
+}
+
+.project__cta a.btn-primary {
+  background: #3f51b5;
+  color: #fff;
+}
+
+.project__cta a.btn-primary:hover {
+  background: #2c3e9c;
+}
+
+@media (max-width: 768px) {
+  .project__cta {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .project__cta a.btn {
+    flex: auto;
+    text-align: center;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
 /* Experience Section */
 .service-number {
   margin-bottom: 15px;
@@ -559,6 +611,48 @@
 #toggle-certificates:hover {
   transform: translateY(-5px) rotate(360deg);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certificate__cta {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.certificate__cta a.btn {
+  font-size: 0.9rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+}
+
+.certificate__cta a.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #2c3e9c;
+}
+
+@media (max-width: 768px) {
+  .certificate__cta {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .certificate__cta a.btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
 }
 
 /* Contact/Footer Section */

@@ -363,16 +363,17 @@
 
 @media (max-width: 768px) {
   .project__cta {
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
   }
 
   .project__cta a.btn {
-    flex: auto;
+    flex: 1 1 auto;
+    min-width: 0;
     text-align: center;
-    padding: 10px 25px;
+    padding: 10px 24px;
     font-size: 0.9rem;
   }
 }

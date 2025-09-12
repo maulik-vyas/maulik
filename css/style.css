@@ -366,7 +366,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
   }
 
   .project__cta a.btn {
